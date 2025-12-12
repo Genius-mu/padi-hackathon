@@ -151,21 +151,21 @@ export default function TestimonialsPage() {
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            className="text-8xl md:text-9xl font-black mb-8"
+            className="text-6xl md:text-9xl font-black mb-8"
           >
             25,000+
           </motion.div>
 
           <motion.h2
-            className="text-4xl md:text-6xl font-bold mb-8"
+            className="text-3xl md:text-6xl font-bold mb-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
             Nigerian homes now get one Padi each
           </motion.h2>
 
-          <motion.p className="text-2xl md:text-3xl mb-12 max-w-4xl mx-auto opacity-95">
-            From Lagos Island to Maiduguri, from Lekki to Jos — <br />
+          <motion.p className="text-xl md:text-3xl mb-12 max-w-4xl mx-auto opacity-95">
+            From Lagos Island to Maiduguri, from Lekki to Jos — 
             Mama and Papa dey smile every day because of Padi.
           </motion.p>
 
@@ -173,14 +173,14 @@ export default function TestimonialsPage() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-16 py-8 text-2xl font-bold bg-white text-green-700 rounded-full shadow-2xl"
+              className="px-16 py-7 text-[15px] font-bold bg-white text-green-700 rounded-full shadow-2xl"
             >
               Bring Padi to My Parents Too
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="px-12 py-7 text-xl font-bold border-4 border-white rounded-full hover:bg-white hover:text-green-700 transition-all"
+              className="px-12 py-7 text-[15px] font-bold border-4 border-white rounded-full hover:bg-white hover:text-green-700 transition-all"
             >
               Join Our WhatsApp Family Group
             </motion.button>
