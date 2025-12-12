@@ -209,7 +209,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-5xl md:text-6xl font-bold mb-8">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-8">
               Bring Joy Back to Everyday Life
             </h2>
             <p className="text-2xl mb-12 opacity-90">
@@ -217,7 +217,7 @@ export default function HomePage() {
               ones.
             </p>
             <motion.button
-              className="px-12 py-6 bg-white text-purple-600 text-xl font-bold rounded-full shadow-2xl hover:shadow-white/50 transform hover:scale-110 transition-all duration-300"
+              className="px-8 sm:px-12 py-6 bg-white text-purple-600 text-xl font-bold rounded-full shadow-2xl hover:shadow-white/50 transform hover:scale-110 transition-all duration-300"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
