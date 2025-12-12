@@ -173,14 +173,14 @@ export default function TestimonialsPage() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-16 py-7 text-[15px] font-bold bg-white text-green-700 rounded-full shadow-2xl"
+              className="px-13 py-7 text-[16px] sm:px-16 sm:py-8 sm:text-xl font-bold bg-white text-green-700 rounded-full shadow-2xl"
             >
               Bring Padi to My Parents Too
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="px-12 py-7 text-[15px] font-bold border-4 border-white rounded-full hover:bg-white hover:text-green-700 transition-all"
+              className="px-9 sm:px-12 py-7 text-[16px] sm:text-xl font-bold border-4 border-white rounded-full hover:bg-white hover:text-green-700 transition-all"
             >
               Join Our WhatsApp Family Group
             </motion.button>
