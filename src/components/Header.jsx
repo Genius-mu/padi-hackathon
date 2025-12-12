@@ -113,9 +113,12 @@ export default function Header() {
               ))}
 
               <div className="pt-6 border-t-2 border-green-200 space-y-4">
-                <button className="w-full text-left text-xl font-medium text-green-700 py-3">
+                <Link
+                  to="/Auth"
+                  className="px-8 py-3 text-lg font-semibold text-green-700 hover:text-green-800"
+                >
                   Sign In
-                </button>
+                </Link>
                 <Link to="/order" onClick={closeMenu}>
                   <button className="w-full py-5 text-xl font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl shadow-xl hover:shadow-green-500/50">
                     Order Padi Now
