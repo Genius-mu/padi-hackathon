@@ -202,12 +202,6 @@ export default function Header() {
             >
               Sign In
             </Link>
-            <Link
-              to="/order"
-              className="px-8 py-3 text-lg font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-full shadow-xl hover:shadow-green-500/50 hover:scale-105 transition-all duration-300"
-            >
-              Order Padi Now
-            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -258,12 +252,6 @@ export default function Header() {
                   className="block w-full text-center py-4 text-xl font-semibold text-green-700 hover:text-green-800 bg-green-50 rounded-2xl transition-colors"
                 >
                   Sign In
-                </Link>
-
-                <Link to="/order" onClick={closeMenu} className="block w-full">
-                  <button className="w-full py-5 text-xl font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-3xl shadow-2xl hover:shadow-green-500/60 hover:scale-105 transition-all duration-300">
-                    Order Padi Now
-                  </button>
                 </Link>
               </div>
             </div>
