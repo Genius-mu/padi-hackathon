@@ -236,7 +236,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-3xl font-bold mb-4">Padi</h3>
             <p className="text-gray-400 text-lg mb-8">
-              Made with ❤️ for every Amma, HomePagea, Nani, Dada across India
+              Made with ❤️ for every Mama, Nani, Daddies across Nigeria
             </p>
             <p className="text-gray-500">
               © 2025 Padi Technologies Pvt Ltd. All rights reserved.
