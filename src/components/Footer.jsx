@@ -110,10 +110,10 @@ export default function Footer() {
               >
                 <Phone className="w-10 h-10 flex-shrink-0" />
                 <div>
-                  <p className="text-sm opacity-90 text-left sm:text-center">
+                  <p className="text-sm opacity-90 text-center">
                     Call or WhatsApp
                   </p>
-                  <p className="text-xl sm:text-2xl text-left sm:text-center font-bold">
+                  <p className="text-xl sm:text-2xl text-center font-bold">
                     0916 488 0693
                   </p>
                 </div>
