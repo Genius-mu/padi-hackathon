@@ -106,12 +106,16 @@ export default function Footer() {
 
               <a
                 href="tel:+2349164880693"
-                className="flex flex-col sm:flex-row items-center gap-4 bg-green-600 hover:bg-green-500 transition-all rounded-2xl p-5 sm:p-6 shadow-xl hover:shadow-green-500/40 w-full text-left"
+                className="flex flex-col items-center gap-4 bg-green-600 hover:bg-green-500 transition-all rounded-2xl p-5 sm:p-6 shadow-xl hover:shadow-green-500/40 w-full text-left"
               >
                 <Phone className="w-10 h-10 flex-shrink-0" />
                 <div>
-                  <p className="text-sm opacity-90">Call or WhatsApp</p>
-                  <p className="text-xl sm:text-2xl font-bold">0916 488 0693</p>
+                  <p className="text-sm opacity-90 text-left sm:text-center">
+                    Call or WhatsApp
+                  </p>
+                  <p className="text-xl sm:text-2xl text-left sm:text-center font-bold">
+                    0916 488 0693
+                  </p>
                 </div>
               </a>
 
