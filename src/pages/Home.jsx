@@ -145,7 +145,7 @@ export default function HomePage() {
                 {
                   icon: Mic,
                   title: "Just Talk",
-                  desc: "Speak naturally in English, Hindi, Tamil, Bengali & more",
+                  desc: "Speak naturally in English, Yoruba, Igbo & Hausa.",
                   color: "from-blue-500 to-cyan-500",
                 },
                 {
@@ -169,7 +169,7 @@ export default function HomePage() {
                 {
                   icon: Globe,
                   title: "Speaks Your Language",
-                  desc: "Supports 10+ Indian languages with warm, familiar voices",
+                  desc: "Supports 3+ Nigerian languages with warm, familiar voices",
                   color: "from-orange-500 to-red-500",
                 },
                 {
