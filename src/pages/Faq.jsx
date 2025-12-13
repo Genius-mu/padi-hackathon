@@ -71,18 +71,16 @@ export default function FAQPage() {
       <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-green-50 to-white">
         <motion.div className="max-w-5xl mx-auto text-center">
           <motion.h1
-            className="text-5xl md:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-700 mb-8"
+            className="text-3xl md:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-700 mb-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
             Any Question Wey Dey Your Mind?
           </motion.h1>
 
-          <motion.p className="text-2xl md:text-3xl text-gray-700 max-w-4xl mx-auto font-medium">
+          <motion.p className="text-xl md:text-3xl text-gray-700 max-w-4xl mx-auto font-medium">
             We don hear all the questions from thousands of children wey wan buy
-            for their parents.
-            <br />
-            See the answers here — clear clear.
+            for their parents. See the answers here — clear clear.
           </motion.p>
         </motion.div>
       </section>
@@ -103,18 +101,18 @@ export default function FAQPage() {
                 <summary className="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
                   <div className="flex items-center gap-6">
                     <div className="p-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl">
-                      <faq.icon className="w-8 h-8 text-white" />
+                      <faq.icon className="w-5 h-5 sm:w-8 sm:h-8 text-white" />
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 pr-10">
+                    <h3 className="text-[18px] md:text-3xl font-bold text-gray-800 pr-10">
                       {faq.q}
                     </h3>
                   </div>
 
-                  <ChevronDown className="w-8 h-8 text-green-600 group-open:rotate-180 transition-transform duration-300" />
+                  <ChevronDown className="sm:w-8 sm:h-8 text-green-600 group-open:rotate-180 transition-transform duration-300" />
                 </summary>
 
                 <div className="px-8 pb-8 pt-4 border-t-2 border-green-100">
-                  <p className="text-xl md:text-2xl text-gray-700 leading-relaxed pl-20">
+                  <p className="text-[15px] md:text-2xl text-gray-700 leading-relaxed pl-20">
                     {faq.a}
                   </p>
                 </div>
@@ -128,37 +126,34 @@ export default function FAQPage() {
       <section className="py-32 px-6 bg-gradient-to-r from-green-600 to-emerald-700">
         <motion.div className="max-w-5xl mx-auto text-center text-white">
           <motion.h2
-            className="text-5xl md:text-7xl font-black mb-10"
+            className="text-3xl md:text-7xl font-black mb-10"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            You Still Get Question?
-            <br />
-            Call Us Now — We Dey Answer 24/7
+            You Still Get Question? Call Us Now — We Dey Answer 24/7
           </motion.h2>
 
           <motion.div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-3xl md:text-4xl font-bold mb-12">
             <a
               href="tel:+2348020666256"
               target="_blank"
-              className="flex items-center gap-4 bg-white text-green-700 px-12 py-8 rounded-full shadow-2xl hover:scale-105 transition"
+              className="flex w-full sm:w-fit items-center gap-4 bg-white text-green-700 px-12 py-8 rounded-full shadow-2xl hover:scale-105 transition"
             >
-              <Phone className="w-12 h-12" />
+              <Phone className="w-9 h-9 sm:w-12 sm:h-12" />
               08020666256
             </a>
             <a
               href="https://wa.me/2348020666256"
               target="_blank"
-              className="flex items-center gap-4 border-4 border-white px-12 py-8 rounded-full hover:bg-white hover:text-green-700 transition"
+              className="flex text-[17px] w-full sm:w-fit sm:text-3xl items-center gap-4 border-4 border-white px-12 py-8 rounded-full hover:bg-white hover:text-green-700 transition"
             >
-              <MessageCircle className="w-12 h-12" />
+              <MessageCircle className="w-9 h-9 sm:w-12 sm:h-12" />
               Chat on WhatsApp
             </a>
           </motion.div>
 
-          <p className="text-2xl opacity-90">
+          <p className="text-[18px] sm:text-2xl opacity-90">
             Talk to real person wey sabi pidgin, Yoruba, Hausa or Igbo.
-            <br />
             We no dey use robot customer care
           </p>
         </motion.div>

@@ -55,14 +55,14 @@ export default function HowItWorks() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-3 px-6 py-3 bg-green-100 rounded-full text-green-800 font-bold mb-8"
+            className="text-[13px] sm:text-[16px] inline-flex items-center gap-3 px-6 py-3 bg-green-100 rounded-full text-green-800 font-bold mb-8"
           >
             <Sparkles className="w-6 h-6" />E dey very simple — even Mama fit
             use am
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-700 mb-8"
+            className="text-4xl md:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-700 mb-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
@@ -70,7 +70,7 @@ export default function HowItWorks() {
           </motion.h1>
 
           <motion.p
-            className="text-2xl md:text-3xl text-gray-700 max-w-4xl mx-auto font-medium"
+            className="text-xl md:text-3xl text-gray-700 max-w-4xl mx-auto font-medium"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -98,15 +98,15 @@ export default function HowItWorks() {
               {/* Left/Right Content */}
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="text-6xl md:text-8xl font-black text-gray-100">
+                  <div className="text-4xl sm:text-6xl md:text-8xl font-black text-gray-100">
                     {step.number}
                   </div>
-                  <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">
                     {step.title}
                   </h2>
                 </div>
 
-                <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                <p className="text-[16px] md:text-2xl text-gray-600 mb-8 leading-relaxed">
                   {step.desc}
                 </p>
 
@@ -116,10 +116,10 @@ export default function HowItWorks() {
                     <div className="flex items-start gap-4">
                       <Mic className="w-8 h-8 text-green-600 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="text-lg font-medium text-gray-700">
+                        <p className="text-[15px] sm:text-lg font-medium text-gray-700">
                           You talk:
                         </p>
-                        <p className="text-xl font-bold text-gray-900 mt-2">
+                        <p className="text-[15px] sm:text-lg font-bold text-gray-900 mt-2">
                           {step.example}
                         </p>
                       </div>
@@ -130,10 +130,12 @@ export default function HowItWorks() {
                     <div className="flex items-start gap-4 text-white">
                       <Volume2 className="w-8 h-8 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="text-lg font-medium opacity-90">
+                        <p className="text-[15px] sm:text-lg font-medium opacity-90">
                           Padi go answer:
                         </p>
-                        <p className="text-xl font-bold mt-2">{step.voice}</p>
+                        <p className="text-[15px] sm:text-xl font-bold mt-2">
+                          {step.voice}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -167,30 +169,27 @@ export default function HowItWorks() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          <h2 className="text-5xl md:text-7xl font-black mb-10">
-            That’s All.
-            <br />
-            Nothing More, Nothing Less.
+          <h2 className="text-4xl md:text-7xl font-black mb-10">
+            That’s All. Nothing More, Nothing Less.
           </h2>
 
-          <p className="text-2xl md:text-3xl mb-12 opacity-95 max-w-4xl mx-auto">
-            No internet all the time. No small remote. No confusion.
-            <br />
-            Just one Padi wey dey your house 24/7 like housegirl wey no dey vex.
+          <p className="text-xl md:text-3xl mb-12 opacity-95 max-w-4xl mx-auto">
+            No internet all the time. No small remote. No confusion. Just one
+            Padi wey dey your house 24/7 like housegirl wey no dey vex.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-16 py-8 text-2xl font-bold bg-white text-green-700 rounded-full shadow-2xl hover:shadow-green-300"
+              className="px-9 w-full sm:w-fit sm:px-16 py-8 text-xl font-bold bg-white text-green-700 rounded-full shadow-2xl hover:shadow-green-300"
             >
               Order Padi for My Parents
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="px-12 py-6 text-xl font-bold flex items-center gap-4 border-4 border-white rounded-full hover:bg-white hover:text-green-700 transition-all"
+              className="px-9 w-full sm:w-fit sm:px-12 py-6 text-xl font-bold flex items-center gap-4 border-4 border-white rounded-full hover:bg-white hover:text-green-700 transition-all"
             >
               Watch Real Video Demo
               <ArrowRight className="w-8 h-8" />

@@ -6,6 +6,7 @@ import HowItWorks from "./pages/HowItWorks";
 import TestimonialsPage from "./pages/Testimonials";
 import FAQPage from "./pages/Faq";
 import AuthPage from "./pages/LogInSignUp";
+import RecentTasksPage from "./components/recenttasks";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/stories" element={<TestimonialsPage />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/Auth" element={<AuthPage />} />
+        <Route path="/Task" element={<RecentTasksPage />} />
+        {/* <Route path="/tasks" element={<RecentTasksPage />} /> */}
       </Routes>
     </>
   );

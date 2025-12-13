@@ -117,7 +117,7 @@ export default function FeaturesPage() {
 
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <motion.h1
-            className="text-5xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-yellow-500 to-green-700 mb-8"
+            className="text-4xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-yellow-500 to-green-700 mb-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -125,7 +125,7 @@ export default function FeaturesPage() {
             Padi Wey Sabi You Pass Your Pickin
           </motion.h1>
           <motion.p
-            className="text-2xl md:text-3xl text-gray-800 max-w-4xl mx-auto font-medium"
+            className="text-xl md:text-3xl text-gray-800 max-w-4xl mx-auto font-medium"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -155,10 +155,10 @@ export default function FeaturesPage() {
                   <feature.icon className="w-full h-full text-white" />
                 </div>
 
-                <h3 className="text-3xl font-bold text-gray-800 mb-5">
+                <h3 className="text-xl sm:text-3xl font-bold text-gray-800 mb-5">
                   {feature.title}
                 </h3>
-                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                <p className="text-[15px] sm:text-xl text-gray-700 mb-8 leading-relaxed">
                   {feature.desc}
                 </p>
 
@@ -166,7 +166,7 @@ export default function FeaturesPage() {
                   {feature.details.map((detail) => (
                     <li
                       key={detail}
-                      className="flex items-start gap-4 text-lg text-gray-700"
+                      className="flex items-start gap-4 text-[15px] sm:text-lg text-gray-700"
                     >
                       <CheckCircle className="w-7 h-7 text-green-600 flex-shrink-0 mt-0.5" />
                       <span>{detail}</span>
@@ -183,16 +183,15 @@ export default function FeaturesPage() {
       <section className="py-32 px-6 bg-gradient-to-r from-green-600 via-yellow-500 to-green-700">
         <motion.div className="max-w-5xl mx-auto text-center text-white">
           <motion.h2
-            className="text-5xl md:text-7xl font-black mb-10 leading-tight"
+            className="text-4xl md:text-7xl font-black mb-10 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
             One Padi for House.
-            <br />
             Peace of Mind for Abroad Pickin.
           </motion.h2>
 
-          <motion.p className="text-2xl md:text-3xl mb-12 font-medium opacity-95">
+          <motion.p className="text-xl md:text-3xl mb-12 font-medium opacity-95">
             Join over 25,000 Nigerian families wey don bring Padi come house.
           </motion.p>
 

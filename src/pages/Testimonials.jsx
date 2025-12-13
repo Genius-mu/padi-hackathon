@@ -68,7 +68,7 @@ export default function TestimonialsPage() {
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-700 mb-8"
+            className="text-3xl md:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-700 mb-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
@@ -76,7 +76,7 @@ export default function TestimonialsPage() {
           </motion.h1>
 
           <motion.p
-            className="text-2xl md:text-3xl text-gray-700 max-w-4xl mx-auto"
+            className="text-xl md:text-3xl text-gray-700 max-w-4xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}

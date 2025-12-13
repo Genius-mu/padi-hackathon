@@ -1,23 +1,159 @@
-"use client";
+// "use client";
+
+// import { Mic, Menu, X } from "lucide-react";
+// import { useState } from "react";
+// import { motion } from "framer-motion";
+// import { Link, useLocation } from "react-router-dom"; // Fixed import
+
+// export default function Header() {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const location = useLocation(); // To know current page
+
+//   // Close menu when clicking a link
+//   const closeMenu = () => setIsOpen(false);
+
+//   const navItems = [
+//     { name: "Home", path: "/" },
+//     { name: "Features", path: "/features" },
+//     { name: "How It Works", path: "/how-it-works" },
+//     { name: "Stories", path: "/stories" }, // or '/stories'
+//     { name: "FAQ", path: "/faq" },
+//   ];
+
+//   return (
+//     <>
+//       {/* Sticky Header */}
+//       <motion.header
+//         initial={{ y: -100 }}
+//         animate={{ y: 0 }}
+//         transition={{ duration: 0.8, ease: "easeOut" }}
+//         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/80 border-b border-green-100 shadow-lg"
+//       >
+//         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+//           {/* Logo */}
+//           <Link to="/" className="flex items-center gap-3">
+//             <div className="p-3 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl shadow-lg">
+//               <Mic className="w-8 h-8 text-white" />
+//             </div>
+//             <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600">
+//               Padi
+//             </span>
+//           </Link>
+
+//           {/* Desktop Navigation */}
+//           <nav className="hidden md:flex items-center gap-10">
+//             {navItems.map((item) => (
+//               <Link
+//                 key={item.path}
+//                 to={item.path}
+//                 className={`text-lg font-medium transition-colors ${
+//                   location.pathname === item.path
+//                     ? "text-green-600"
+//                     : "text-gray-700 hover:text-green-600"
+//                 }`}
+//               >
+//                 {item.name}
+//               </Link>
+//             ))}
+//           </nav>
+
+//           {/* Desktop CTA */}
+//           <div className="hidden md:flex items-center gap-4">
+//             <Link
+//               to="/Auth"
+//               className="px-8 py-3 text-lg font-semibold text-green-700 hover:text-green-800"
+//             >
+//               Sign In
+//             </Link>
+//             <Link
+//               to="/"
+//               className="px-8 py-3 text-lg font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-full shadow-xl hover:shadow-green-500/50 hover:scale-105 transition-all duration-300"
+//             >
+//               Order Padi Now
+//             </Link>
+//           </div>
+
+//           {/* Mobile Menu Toggle */}
+//           <button
+//             onClick={() => setIsOpen(!isOpen)}
+//             className="md:hidden p-3 rounded-xl bg-green-50"
+//             aria-label="Toggle menu"
+//           >
+//             {isOpen ? (
+//               <X className="w-7 h-7 text-green-700" />
+//             ) : (
+//               <Menu className="w-7 h-7 text-green-700" />
+//             )}
+//           </button>
+//         </div>
+
+//         {/* Mobile Menu Dropdown – FIXED */}
+//         {isOpen && (
+//           <motion.div
+//             initial={{ opacity: 0, y: -20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             exit={{ opacity: 0, y: -20 }}
+//             transition={{ duration: 0.3 }}
+//             className="md:hidden bg-white/95 backdrop-blur-2xl border-t-2 border-green-200 shadow-2xl"
+//           >
+//             <div className="px-6 py-8 flex flex-col gap-6">
+//               {navItems.map((item) => (
+//                 <Link
+//                   key={item.path}
+//                   to={item.path}
+//                   onClick={closeMenu} // This closes the menu properly
+//                   className={`text-2xl font-semibold transition-colors py-3 px-4 rounded-xl ${
+//                     location.pathname === item.path
+//                       ? "text-green-600 bg-green-50"
+//                       : "text-gray-800 hover:text-green-600 hover:bg-green-50"
+//                   }`}
+//                 >
+//                   {item.name}
+//                 </Link>
+//               ))}
+
+//               <div className="pt-6 border-t-2 border-green-200 space-y-4">
+//                 <Link
+//                   to="/Auth"
+//                   className="px-8 py-3 mb-8 text-lg font-semibold text-green-700 hover:text-green-800"
+//                 >
+//                   Sign In
+//                 </Link>
+//                 <Link to="/order" onClick={closeMenu}>
+//                   <button className="w-full py-5 text-xl font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl shadow-xl hover:shadow-green-500/50">
+//                     Order Padi Now
+//                   </button>
+//                 </Link>
+//               </div>
+//             </div>
+//           </motion.div>
+//         )}
+//       </motion.header>
+
+//       {/* Spacer */}
+//       <div className="h-24 md:h-28" />
+//     </>
+//   );
+// }
 
 import { Mic, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom"; // Fixed import
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // To know current page
+  const location = useLocation();
 
-  // Close menu when clicking a link
   const closeMenu = () => setIsOpen(false);
 
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Features", path: "/features" },
     { name: "How It Works", path: "/how-it-works" },
-    { name: "Stories", path: "/stories" }, // or '/stories'
+    { name: "Stories", path: "/stories" },
     { name: "FAQ", path: "/faq" },
+    { name: "Tasks", path: "/Task" },
   ];
 
   return (
@@ -27,29 +163,30 @@ export default function Header() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/80 border-b border-green-100 shadow-lg"
+        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/90 border-b border-green-100 shadow-lg"
       >
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <div className="p-3 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl shadow-lg">
               <Mic className="w-8 h-8 text-white" />
             </div>
-            <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600">
+            <span className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600">
               Padi
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-lg font-medium transition-colors ${
+                onClick={closeMenu}
+                className={`text-lg font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
                   location.pathname === item.path
-                    ? "text-green-600"
-                    : "text-gray-700 hover:text-green-600"
+                    ? "text-green-700 bg-green-50"
+                    : "text-gray-700 hover:text-green-600 hover:bg-green-50"
                 }`}
               >
                 {item.name}
@@ -57,16 +194,16 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* Desktop CTA Buttons */}
+          <div className="hidden lg:flex items-center gap-4">
             <Link
               to="/Auth"
-              className="px-8 py-3 text-lg font-semibold text-green-700 hover:text-green-800"
+              className="px-7 py-3 text-lg font-semibold text-green-700 hover:text-green-800 transition-colors"
             >
               Sign In
             </Link>
             <Link
-              to="/"
+              to="/order"
               className="px-8 py-3 text-lg font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-full shadow-xl hover:shadow-green-500/50 hover:scale-105 transition-all duration-300"
             >
               Order Padi Now
@@ -76,7 +213,7 @@ export default function Header() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-3 rounded-xl bg-green-50"
+            className="lg:hidden p-3 rounded-xl bg-green-50 hover:bg-green-100 transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? (
@@ -87,40 +224,44 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu Dropdown – FIXED */}
+        {/* Mobile Menu Dropdown – Fully Responsive */}
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white/95 backdrop-blur-2xl border-t-2 border-green-200 shadow-2xl"
+            className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-2xl border-t-4 border-green-500 shadow-2xl"
           >
-            <div className="px-6 py-8 flex flex-col gap-6">
+            <div className="px-6 py-8 flex flex-col gap-5">
+              {/* Navigation Links */}
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  onClick={closeMenu} // This closes the menu properly
-                  className={`text-2xl font-semibold transition-colors py-3 px-4 rounded-xl ${
+                  onClick={closeMenu}
+                  className={`text-2xl font-semibold py-4 px-6 rounded-2xl transition-all duration-200 text-left ${
                     location.pathname === item.path
-                      ? "text-green-600 bg-green-50"
-                      : "text-gray-800 hover:text-green-600 hover:bg-green-50"
+                      ? "text-green-700 bg-green-100"
+                      : "text-gray-800 hover:text-green-700 hover:bg-green-50"
                   }`}
                 >
                   {item.name}
                 </Link>
               ))}
 
-              <div className="pt-6 border-t-2 border-green-200 space-y-4">
+              {/* Mobile CTA Section */}
+              <div className="pt-6 mt-4 border-t-2 border-green-200 space-y-5">
                 <Link
                   to="/Auth"
-                  className="px-8 py-3 text-lg font-semibold text-green-700 hover:text-green-800"
+                  onClick={closeMenu}
+                  className="block w-full text-center py-4 text-xl font-semibold text-green-700 hover:text-green-800 bg-green-50 rounded-2xl transition-colors"
                 >
                   Sign In
                 </Link>
-                <Link to="/order" onClick={closeMenu}>
-                  <button className="w-full py-5 text-xl font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl shadow-xl hover:shadow-green-500/50">
+
+                <Link to="/order" onClick={closeMenu} className="block w-full">
+                  <button className="w-full py-5 text-xl font-bold text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-3xl shadow-2xl hover:shadow-green-500/60 hover:scale-105 transition-all duration-300">
                     Order Padi Now
                   </button>
                 </Link>
@@ -130,8 +271,8 @@ export default function Header() {
         )}
       </motion.header>
 
-      {/* Spacer */}
-      <div className="h-24 md:h-28" />
+      {/* Spacer to prevent content overlap */}
+      <div className="h-20 lg:h-24" />
     </>
   );
 }
